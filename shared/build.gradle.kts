@@ -38,6 +38,12 @@ kotlin {
             implementation(libs.ktor.client.logging)
             implementation(libs.kermit)
         }
+        androidMain.dependencies {
+            implementation(libs.ktor.client.android)
+        }
+        iosMain.dependencies {
+            implementation(libs.ktor.client.darwin)
+        }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
         }
